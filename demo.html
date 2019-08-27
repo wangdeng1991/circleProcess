@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+  <style>
+
+  </style>
+</head>
+<body>
+<div class="c1"></div>
+<div class="c2"></div>
+<script src="../js/jquery.js"></script>
+<script src="./index.js"></script>
+<script>
+  // 第一次调用
+  $('div').circleProcess({
+    value: 0,
+    radius: 60,
+    thickness: 10,
+  })
+
+  //再次调用
+  setTimeout(function () {
+    $('.c1').circleProcess('change', .3)
+    $('.c2').circleProcess('change', .8)
+  }, 3000)
+
+  //new 方式调用
+  // var process = new CircleProgress({
+  //   value: .5,
+  //   lineCap: 'round',
+  //   thickness: 14,
+  //   fontStyle: {
+  //     size: '24px',
+  //     color: '#fff',
+  //     fontFamily: 'SimSun'
+  //   },
+  //   emptyFill: '#eee',
+  //   fillColor: 'red',
+  //   bgFill: 'green',
+  //   animationTime: 1000,
+  //   animationType: 'ease-in',
+  //   el: '.c1'
+  // })
+  // var process2 = new CircleProgress({
+  //   value: .5,
+  //   lineCap: 'butt',
+  //   thickness: 14,
+  //   fontStyle: {
+  //     size: '24px',
+  //     color: '#fff',
+  //     fontFamily: 'SimSun'
+  //   },
+  //   emptyFill: '#eee',
+  //   fillColor: 'red',
+  //   bgFill: 'green',
+  //   animationTime: 1000,
+  //   animationType: 'ease-in',
+  //   el: '.c2'
+  // })
+  //
+  // setTimeout(function () {
+  //   process.changeProcess(.3)
+  // }, 3000)
+  // setTimeout(function () {
+  //   process2.changeProcess(.9)
+  //
+  // }, 3000)
+
+</script>
+</body>
+</html>
