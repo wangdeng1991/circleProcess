@@ -42,10 +42,10 @@
       color: '#000',
       fontFamily: 'SimSun'
     },  //字体
-    emptyFill: '#666', // 轨道颜色
+    emptyFill: '#eee', // 轨道颜色
     fillColor: '#3bb9ef', //进度条颜色
     bgFill: '#fff', // 小圆背景色
-    fillGradient: null, // 进度条渐变设置 ['#3aeabb', '#fdd250']
+    fillGradient: ['#3aeabb', '#fdd250'], // 进度条渐变设置 ['#3aeabb', '#fdd250']
     animationType : 'linear', //动画运动函数 linear ease-in ease-out ease-in-out
     animationTime: 1000, //动画时间
 
